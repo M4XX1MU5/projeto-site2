@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Site Pessoal</title>
+
+<!--Aqui é o link de CSS Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+<!--Custom CSS-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Página Pessoal</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="section">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6">
+            <h1 class="title">Bem-vindo(a) ao meu site pessoal</h1>
+            <p class="subtitle">
+              Eu sou um desenvolvedor front-end apaixonado por criar experiências
+              digitais incríveis e atraentes.
+            </p>
+            <a href="#about" class="btn btn-primary">Saiba mais</a>
+          </div>
+          <div class="col-md-6" style="margin-top: 10px;">
+            <img
+              src="fotoeuler.png"
+              alt="Imagem de destaque"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section bg-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6">
+            <img
+              src="fotodev.jpg"
+              alt="Imagem de destaque"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2 class="title">Sobre mim</h2>
+            <p class="subtitle">
+              Olá! Meu nome é <strong>Euler José da Silva</strong> e eu sou um desenvolvedor front-end com
+              2 anos de experiência. Eu sou apaixonado por criar experiências digitais incríveis e atraentes, e estou sempre buscando aprender mais sobre as últimas tecnologias e tendências do mercado.
+            </p>
+            <p>
+            Eu tenho habilidades em HTML, CSS, JavaScript, além de frameworks como Bootstrap e jQuery. Eu também tenho experiência em desenvolvimento responsivo e acessibilidade web.
+            </p>
+            <a href="#contact" class="btn btn-primary">Entre em contato</a>
+            </div>
+            </div>
+            </div>
+            </section>
+            <section id="contact" class="section">
+            <div class="container">
+            <div class="row align-items-center justify-content-center">
+            <div class="col-md-6">
+            <h2 class="title">Entre em contato</h2>
+            <p class="subtitle">
+            Você pode entrar em contato comigo preenchendo o formulário abaixo
+            ou enviando um e-mail para euler.jos@gmail.com.
+            </p>
+            <form id="contact-form">
+            <div class="form-group">
+            <label for="name">Nome</label>
+            <input
+                           type="text"
+                           class="form-control"
+                           id="name"
+                           name="name"
+                           placeholder="Seu nome"
+                           required
+                         />
+            </div>
+            <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+                           type="email"
+                           class="form-control"
+                           id="email"
+                           name="email"
+                           placeholder="Seu e-mail"
+                           required
+                         />
+            </div>
+            <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+                           class="form-control"
+                           id="message"
+                           name="message"
+                           placeholder="Sua mensagem"
+                           required
+                         ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+              
+            </div>
+            <div class="col-md-6">
+            <img
+                       src="cont.jpg"
+                       alt="Imagem de destaque"
+                       class="img-fluid"
+                     />
+            </div>
+            </div>
+            </div>
+            </section>
+
+            <footer style="
+                background-color: black;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+                font-size: 16px;
+                font-weight: bold; margin-top: 10px;">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p>&copy; Euler José da Silva 2023. Todos os direitos reservados.</p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+              
+
+<!--Bootstrap JS-->
+<script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+    ></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+    ></script>
+<script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+    ></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    // Animação de rolagem
+    $(window).scroll(function () {
+    $(".animated").each(function () {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+        $(this).addClass("fadeInUp");
+        }
+    });
+    });
+
+    // Efeito de rolagem suave
+    $("a").on("click", function (event) {
+    if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $("html, body").animate(
+        {
+            scrollTop: $(hash).offset().top,
+        },
+        800,
+        function () {
+            window.location.hash = hash;
+        }
+        );
+    }
+    });
+});
+    // Alerta do Formulário
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function(event) {
+
+    event.preventDefault();
+
+    alert('Enviado com sucesso!');
+    });
+
+</script>
+  
+</body>
+</html>
+
+
